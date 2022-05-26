@@ -18,7 +18,7 @@ body {
 .header {
   width: 100%;
   background: #EDD603;
-  box-shadow: 0px 10px 18px -10px #000;
+  box-shadow: 0px 6px 14px -10px #000;
   margin-bottom: 20px;
 }
 .header__container {
@@ -55,10 +55,16 @@ body {
 .goods__card {
   height: auto;
   flex: 0 1 21%;
-  box-shadow: 2px 4px 10px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 10px -2px;
   margin: 20px 0 20px;
   border-radius: 20px;
   overflow: hidden;
+  transition: 0.2s transform, 0.2s color;
+  color: rgba(0, 0, 0, 0.2);
+}
+.goods__card:hover {
+  transform: scale(1.05);
+  color: rgba(0, 0, 0, 0.3);
 }
 .goods__img {
   width: 100%;
@@ -73,6 +79,7 @@ body {
 .goods__description {
   font-size: min(36px, 2.5vw);
   padding: 10px 0 20px 12px;
+  color: #000;
 }
 
 .footer {
