@@ -5,16 +5,10 @@ function makeFibonacciFunction() {
     let fibB = 1;
 
     return function makeFibonacciFunction() {
-
-        function helper() {
-            let fibRes = fibB;
-            fibB = fibA + fibB;
-            fibA = fibRes;
-            return fibRes;
-        }
-
-        return helper();
-
+        let fibRes = fibB;
+        fibB = fibA + fibB;
+        fibA = fibRes;
+        return fibRes;
     };
 
 };
